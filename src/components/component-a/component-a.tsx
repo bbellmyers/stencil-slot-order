@@ -6,6 +6,10 @@ import { Component, h } from '@stencil/core';
 })
 export class ComponentA {
   render() {
-    return <div><slot /></div>;
+    return (
+      <div class="component-a-inserted">
+        <slot />
+      </div>
+    );
   }
 }
